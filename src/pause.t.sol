@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 // Copyright (C) 2019 David Terry <me@xwvvvvwx.com>
 //
 // This program is free software: you can redistribute it and/or modify
@@ -13,7 +15,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-pragma solidity >=0.5.12;
+pragma solidity >=0.6.12;
 
 import {DSTest} from "ds-test/test.sol";
 
@@ -88,8 +90,6 @@ contract Test is DSTest {
 
         uint delay = 1 days;
         pause = new DSPause(delay, address(0x0), address(new Authority()));
-
-
     }
 
     // returns the 1st 32 bytes of data from a bytes array
